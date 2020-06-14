@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> <!-- Serve para não haver probelmas com a utilização de caracteres especiais, independentemente do browser-->
+		<title>1º Código com Javascript</title>
+	</head>
+
+	<body>
+
+		<h2 class="exemplo">Um cabeçalho com a classe="exemplo"</h2>
+		<h2 class="exemplo">Outra cabeçalho que não vai ser alterado, apesar de ter a classe="exemplo".</h2> 
+
+		<p>Clica no botão para alterar o texto do primeiro elemento no documento que esteja definido com a classe "exemplo".</p>
+
+		<button onclick="myFunction()">Experimenta</button> <!-- Faz com que quando clicamos no botão, execute a função "myfunction"-->
+
+		<script type="text/javascript"> //Iniciação da escrita em Javascript
+			function myFunction() { //Criação de uma função chamada "myfunction"
+  				var exemplo1 = document.querySelector(".exemplo"); // Esta variável guarda o valor retirado do comando "document.querySelector(".exemplo")". Este comando vai buscar a informação que está no primeiro seletor CSS (classe exemplo)
+  				exemplo1.innerHTML = "Este é o novo cabeçalho, onde o texto foi alterado"; //o "inner.HTML" permite alterar o que foi selecionado pelo o mesmo, neste caso a variável "exemplo1", onde está guardado o texto (Um cabeçalho com a classe="exemplo"), sendo que este texto irá desaparecer e irá aparecer o seguinte texto: "Este é o novo cabeçalho, onde o texto foi alterado"
+			}
+		</script> <!-- Fim da escrita em Javascript-->
+
+	</body>
+</html>
